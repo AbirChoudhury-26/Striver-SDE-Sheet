@@ -2,7 +2,7 @@
 Problems for Interview preparation .
 ## Hello Folks 🖐. This repo will contain all the codes related to Data Structure 
 
-. Arrays
-. Linkedlist
-. String
+* Arrays
+* Linkedlist
+* String
 
