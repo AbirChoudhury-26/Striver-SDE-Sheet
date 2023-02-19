@@ -5,4 +5,8 @@ Problems for Interview preparation .
 * Arrays
 * Linkedlist
 * String
+* Heap 
+* Greedy Algorithm
+* Stack
+* Queue
 
