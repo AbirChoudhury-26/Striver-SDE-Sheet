@@ -12,5 +12,6 @@ Problems for Interview preparation .
 * Backtraking
 * Recursion
 * Binary Tree
+* Binary Search Tree
 * BFS
 
