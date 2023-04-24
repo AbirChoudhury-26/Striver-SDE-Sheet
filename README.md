@@ -1,6 +1,7 @@
 # Striver-SDE-Sheet
 Problems for Interview preparation .
 ## Hello Folks 🖐. This repo will contain all the codes related to Data Structure.Mostly Data Structure will be covered. 
+## Soon Graph & Trees will be covered 
 
 * Arrays
 * Linkedlist
