@@ -15,4 +15,5 @@ Problems for Interview preparation .
 * Binary Tree
 * Binary Search Tree
 * BFS
+* Graphs
 
