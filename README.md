@@ -16,5 +16,5 @@ Problems for Interview preparation .
 * Binary Search Tree
 * BFS
 * Graphs
- ## Practice for these topics will be also covered.
+ ## Practice for these topics will be also covered. If required Competition codes will also be covered for better understabding of Data Structure
 
