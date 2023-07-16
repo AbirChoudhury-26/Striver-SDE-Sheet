@@ -20,7 +20,7 @@ int main()
 {
     int n;
     cin>>n;
-    while(n--);
+    while(n--);`
     {
         string s;
         cin>>s;
