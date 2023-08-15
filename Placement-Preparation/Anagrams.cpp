@@ -4,8 +4,8 @@ using namespace std;
  
 int main()
 {
-    string s1="REACTIVE";
-    string s2="CREATIVE";
+    string s1="ANGEL";
+    string s2="GLEAN";
     bool f=true;
     map<char,int>mp1,mp2;
 
@@ -33,3 +33,7 @@ int main()
   
   return 0;
 }
+
+//  Som emore examples can be:
+// 1. Bored & Robed
+// 2. Night & Thing
