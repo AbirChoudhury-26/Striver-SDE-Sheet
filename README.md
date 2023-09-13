@@ -2,7 +2,8 @@
 * AppPerfect
 * InTime Tech
 * TCS NQT Preparation
-
+* Dynamic Programming
+* Recursion
 ` These ar included in form of Reccursion Dynamic Programming`
 
 ### More codes will be added for practice 
