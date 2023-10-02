@@ -5,7 +5,7 @@
 * Dynamic Programming
 * Recursion
 
-` TCS NQT Questions easy-moderate level of questions-Like Arrays,Number system etc.`
+` TCS NQT Questions easy-moderate level of questions-Like Arrays,Number system,Strings,Sorting  etc.`
 ` These are included in form of Reccursion Dynamic Programming`
 
 ### More codes will be added for practice 
