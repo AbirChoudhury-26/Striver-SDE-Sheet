@@ -8,8 +8,5 @@
 * `Search ,linkedList`
 ` TCS NQT Questions easy-moderate level of questions-Like Arrays,Number system,Strings,Sorting  etc.`
 ` These are included in form of Reccursion Dynamic Programming`
-* `Striver Sheet of DSA Questions are added`\
-
-
-skjcsdcsohdhoi
+* `Striver Sheet of DSA Questions are added`
 ### More codes will be added for practice 
