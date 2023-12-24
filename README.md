@@ -9,4 +9,5 @@
 ` TCS NQT Questions easy-moderate level of questions-Like Arrays,Number system,Strings,Sorting  etc.`
 ` These are included in form of Reccursion Dynamic Programming`
 * `Striver Sheet of DSA Questions are added`
+* `Competetive platform like GFG,LeetCode Question are also included & added in Future`.
 ### More codes will be added for practice for DSA Topics like Trees,Graphs etc for Striver Sheet'
