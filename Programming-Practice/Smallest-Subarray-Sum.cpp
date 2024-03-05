@@ -1,6 +1,10 @@
 # include <iostream>
 using namespace std;
 
+
+// N\aive Approach
+
+
 // Returns length of smallest subarray with sum greater than x.
 // If there is no subarray with given sum, then returns n+1
 int smallestSubWithSum(int arr[], int n, int x)
@@ -59,3 +63,7 @@ int main()
 
 	return 0;
 }
+
+
+
+
