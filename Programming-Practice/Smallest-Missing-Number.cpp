@@ -95,3 +95,34 @@ int main()
 	cout<<"First Missing element is : "<<findSmallestMissinginSortedArray(arr); 
 } 
 
+// Hash Vector
+
+// C++ program to find the smallest element 
+// missing in a sorted array. 
+#include<bits/stdc++.h> 
+using namespace std; 
+
+int findFirstMissing(int arr[],int n ,int m) 
+{ 
+
+vector<int> vec(m,0); 
+	
+for(int i=0;i<n;i++){ 
+	vec[arr[i]]=1; 
+} 
+	
+for(int i=0;i<m;i++){ 
+	if(vec[i]==0){return i;} 
+} 
+} 
+
+// Driver code 
+int main() 
+{ 
+	int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 10}; 
+	int n = sizeof(arr)/sizeof(arr[0]); 
+	int m=11; 
+	cout << "Smallest missing element is " <<findFirstMissing(arr, n, m) << endl; 
+} 
+
+
