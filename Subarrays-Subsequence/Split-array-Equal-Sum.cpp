@@ -61,8 +61,8 @@
 
 // Efficient Soln
 
-// C++ program to split an array into Two 
-// equal sum subarrays 
+
+/*First compute the sum of the whole array from left to right. Now we traverse array from right and keep track of right sum, left sum can be computed by subtracting current element from whole sum.*/
 #include<bits/stdc++.h> 
 using namespace std; 
 
@@ -124,3 +124,5 @@ int main()
 	printTwoParts(arr, n); 
 	return 0; 
 } 
+
+
