@@ -28,3 +28,15 @@ int main()
 	cout << "Maximum contiguous sum is " << max_sum;
 	return 0;
 }
+
+
+// Steps:
+
+/*
+Initialize the variables max_so_far = INT_MIN and max_ending_here = 0
+Run a for loop from 0 to N-1 and for each index i: 
+Add the arr[i] to max_ending_here.
+If  max_so_far is less than max_ending_here then update max_so_far  to max_ending_here.
+If max_ending_here < 0 then update max_ending_here = 0
+Return max_so_far
+*/
