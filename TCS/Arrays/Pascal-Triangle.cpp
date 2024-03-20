@@ -1,6 +1,9 @@
-class Solution {
-public:
-    vector<vector<int>> generate(int numRows) {
+ #include<iostream>
+ #include<bits/stdc++.h>
+ using namespace std;
+  
+
+ vector<vector<int>> generate(int numRows) {
         vector<vector<int>> result;
         vector<int> prevRow;
         
@@ -17,4 +20,9 @@ public:
         
         return result;
     }
-};
+ int main()
+ {
+   
+   return 0;
+ }
+ 
