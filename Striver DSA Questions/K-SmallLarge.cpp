@@ -13,7 +13,7 @@ void kth_Largest_And_Smallest_By_AscendingOrder(vector<int> &arr, int k)
 int main()
 {
 
-    vector<int> arr = {1, 2, 6, 4, 5, 3};
+    vector<int> arr = {5, 322, 64, 432, 10, 3};
     kth_Largest_And_Smallest_By_AscendingOrder(arr, 3);
 
     return 0;
