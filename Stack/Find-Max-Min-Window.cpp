@@ -46,6 +46,32 @@
 
 // Using Stack
 
+/*
+Steps to follow:
+
+Initialize a stack s.
+Create two arrays, left and right of size N + 1 to store the next smaller and the previous smaller elements.
+Traverse a loop on i from 0 till N
+Assign left[i] = -1 and right[i] = N
+Traverse a loop on i from 0 till N
+Pop the elements from s while the current element is not greater than the element at top of stack s.
+If the stack is not empty
+Update left[i] = s.top()
+Push current index in stack s
+Empty the stack s.
+Traverse a loop on i from N – 1 till 0
+Pop the elements from s while the current element is not greater than the element at top of stack s.
+If the stack is not empty
+Update right[i] = s.top()
+Push current index in stack s
+Initialize an array ans of size N + 1 with 0.
+Traverse a loop on i from 0 till N
+Initialize len = left[i] – right[i] + 1
+Update ans[len] = max(ans[len], arr[i])
+Traverse a loop on i from N – 1 till 0
+Update ans[i] = max(ans[i], ans[i + 1])
+Print ans array. 
+*/
 
 // An efficient C++ program to find
 // maximum of all minimums of
@@ -70,7 +96,7 @@ void printMaxOfMin(int arr[], int n)
 	}
 
 	// Fill elements of left[] using logic discussed on
-	// https://www.geeksforgeeks.org/next-greater-element/
+
 	for (int i = 0; i < n; i++) {
 		while (!s.empty() && arr[s.top()] >= arr[i])
 			s.pop();
