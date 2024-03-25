@@ -1,12 +1,44 @@
-// C++ program to find the difference b/w left and 
-// right smaller element of every element in array 
+
+/*
+Steps:
+
+Find all smaller element on left side
+     1. Create a new empty stack S and an array LS[]
+     2. For every element 'arr[i]' in the input arr[],
+          where 'i' goes from 0 to n-1.
+        a) while S is nonempty and the top element of 
+           S is greater than or equal to 'arr[i]':
+           pop S
+    
+        b) if S is empty:
+           'arr[i]' has no preceding smaller value 
+            LS[i] = 0 
+            
+        c) else:
+            the nearest smaller value to 'arr[i]' is top
+            of stack
+              LS[i] = s.top()
+
+        d) push 'arr[i]' onto S   
+
+Find all smaller element on right side
+     3. First reverse array arr[]. After reversing the array, 
+        right smaller become left smaller.
+     4. Create an array RRS[] and repeat steps  1 and 2 to 
+        fill RRS (in-place of LS).
+         
+5. Initialize result as -1 and do following for every element
+   arr[i]. In the reversed array right smaller for arr[i] is
+   stored at RRS[n-i-1]
+      return result = max(result, LS[i]-RRS[n-i-1])
+*/
 #include<bits/stdc++.h> 
 using namespace std; 
 
 // Function to fill left smaller element for every 
 // element of arr[0..n-1]. These values are filled 
-// in SE[0..n-1] 
-void leftSmaller(int arr[], int n, int SE[]) 
+// in s[0..n-1] 
+void leftSmaller(int arr[], int n, int s[]) 
 { 
 	// Create an empty stack 
 	stack<int>S; 
@@ -22,11 +54,11 @@ void leftSmaller(int arr[], int n, int SE[])
 
 		// Store the smaller element of current element 
 		if (!S.empty()) 
-			SE[i] = S.top(); 
+			s[i] = S.top(); 
 
 		// If all elements in S were greater than arr[i] 
 		else
-			SE[i] = 0; 
+			s[i] = 0; 
 
 		// Push this element 
 		S.push(arr[i]); 
