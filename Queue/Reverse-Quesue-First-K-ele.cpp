@@ -1,7 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solve(queue<int>& q, int k);
+/*
+ Steps:
+
+1. Reverse first k elements.
+2. Remove from front and add to back (N – K) elements.
+*/
 
 // Function to reverse first k elements of a queue
 queue<int> reverseFirstK(queue<int> q, int k) {
