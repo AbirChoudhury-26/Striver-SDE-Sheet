@@ -1,10 +1,18 @@
-// C++ program to find maximum rectangular area in 
-// linear time 
+// C++ program to find maximum rectangular area in linear time
+
+
+/* Steps:
+Create an empty stack.
+Start from the first bar, and do the following for every bar hist[i] where ‘i‘ varies from 0 to n-1
+If the stack is empty or hist[i] is higher than the bar at top of the stack, then push ‘i‘ to stack. 
+If this bar is smaller than the top of the stack, then keep removing the top of the stack while the top of the stack is greater. 
+Let the removed bar be hist[tp]. Calculate the area of the rectangle with hist[tp] as the smallest bar. 
+For hist[tp], the ‘left index’ is previous (previous to tp) item in stack and ‘right index’ is ‘i‘ (current index).
+
+*/
 #include <bits/stdc++.h> 
 using namespace std; 
 
-// The main function to find the maximum rectangular 
-// area under given histogram with n bars 
 int getMaxArea(int hist[], int n) 
 { 
 	// Create an empty stack. The stack holds indexes 
