@@ -79,3 +79,15 @@ int main()
 	cout << "Maximum area is " << getMaxArea(hist, n); 
 	return 0; 
 }
+
+
+// Using  next and the previous smaller element:
+
+/* Steps:
+
+First, we will take two arrays left_smaller[] and right_smaller[] and initialize them with -1 and n respectively
+For every element, we will store the index of the previous smaller and next smaller element in left_smaller[] and right_smaller[] arrays respectively
+Now for every element, we will calculate the area by taking this ith element as the smallest in the range left_smaller[i] and right_smaller[i] and multiplying it with the difference of left_smaller[i] and right_smaller[i]
+We can find the maximum of all the areas calculated in step 3 to get the desired maximum area
+
+*/
