@@ -51,6 +51,21 @@ int main()
 
 /* Efficient Approach*/
 
+
+/* Steps:
+
+1) Push the first index to stack. 
+2) Pick rest of the indexes one by one and follow following steps in loop. 
+    a) Mark the current element as i. 
+    b) If stack is not empty, then pop an index from stack and compare a[index] with a[I]. 
+    c) If a[I] is greater than the a[index], then a[I] is the next greater element for the a[index]. 
+    d) Keep popping from the stack while the popped index element is smaller than a[I]. a[I] becomes the next greater element for all such popped elements 
+    g) If a[I] is smaller than the popped index element, then push the popped index back.
+3) After the loop in step 2 is over, pop all the index from stack and print -1 as next index for them.
+
+*/
+
+
 // C++ program to print 
 // next greater number 
 // of Q queries
