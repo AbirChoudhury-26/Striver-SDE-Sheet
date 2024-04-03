@@ -1,9 +1,17 @@
-// C++ program for the above approach
+
+/* Steps:
+Initialize a stack, say S, to keep track of the score and initially push 0 into the stack.
+Traverse the string str using the variable i and perform the following steps:
+If the value of str[i] is equal to ‘(‘, push 0 to the stack S.
+Otherwise, perform the following steps:
+Store the top of the stack S in a variable, say temp, and pop the element from the top of the stack.
+If the value of temp is non-zero, then inner parentheses exist. Add 2 * temp to the top of the stack. Otherwise, add 1 to the top of the stack.
+
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function to calculate the score
-// of the parentheses using stack
+
 void scoreOfParentheses(string s)
 {
 	// To keep track of the score
