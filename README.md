@@ -3,10 +3,10 @@
 * `InTime Tech`
 * `Programming Practice Questions`
 * `TCS NQT Preparation: Arrays, Strings, Number System,Stack, Queue`
-* ` These are included in form of Reccursion Dynamic Programming`
+* `DP,Memoisation & Tabulation questions ` will be included
 * `Striver Sheet of DSA Questions are added`
 * `Competetive platform like GFG,LeetCode Question are also included & added in Future`.
 * `Sub Sequences & Sub arrays` type of question are also added
 * `Stacks & Queue` are now being Added as Individual topics.
 
-### Note: codes will be added for DSA Topics like Trees,Graphs etc from Striver Sheet'
+### Note: Codes will be added for DSA Topics like Trees,Graphs etc from Striver Sheet'
