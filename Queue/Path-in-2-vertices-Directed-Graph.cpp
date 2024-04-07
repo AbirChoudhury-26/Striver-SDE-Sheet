@@ -2,8 +2,19 @@
 #include <list>
 using namespace std;
 
-// This class represents a directed graph using adjacency list 
-// representation
+/* Approach:
+BFS Algorithm: 
+
+The implementation below is using BFS.
+Create a queue and a visited array initially filled with 0, of size V where V is a number of vertices.
+Insert the starting node in the queue, i.e. push u in the queue and mark u as visited.
+Run a loop until the queue is not empty.
+Dequeue the front element of the queue. Iterate all its adjacent elements. If any of the adjacent elements is the destination return true. Push all the adjacent and unvisited vertices in the queue and mark them as visited.
+Return false as the destination is not reached in BFS
+
+*/
+
+
 class Graph
 {
 	int V; // No. of vertices
