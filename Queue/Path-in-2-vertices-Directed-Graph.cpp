@@ -115,8 +115,14 @@
 // }
 
 
-// DFS Aplgorithm
+// DFS Algorithm
 
+/* Approach:
+1.if start==end return 1 since we have to reached our destination.
+2.Mark start as visited.
+3.Traverse directly connected vertices of start and recur the function dfs for every such unexplored vertex.
+4.return 0 if we do not reach our destination.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
