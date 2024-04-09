@@ -1,3 +1,8 @@
+/* Approach:
+1. BFS maintain an array of distance[n] and initialize it to zero for all vertices.
+2. Now, suppose during BFS, vertex x is popped from queue and we are pushing all adjacent non-visited vertices(i) back into queue at the same time we should update distance[i] = distance[x] + 1;. 
+ */
+
 #include<bits/stdc++.h> 
 using namespace std; 
 
