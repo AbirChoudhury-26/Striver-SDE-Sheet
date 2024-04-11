@@ -1,8 +1,13 @@
+/* Approach:
+
+The idea is to use a modified version of Breadth-First Search in which we keep storing the parent of a given vertex while doing the breadth-first search. We first initialize an array dist[0, 1, …., v-1] such that dist[i] stores the distance of vertex i from the source vertex and array par[0, 1, ….., v-1] such that par[i] represents the parent of the vertex i in the breadth-first search starting from the source. 
+
+Now we get the length of the path from source to any other vertex from array dist[], and for printing the path from source to any vertex we can use array par[].
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Modified bfs to store the parent of nodes along with the
-// distance from source node
 void bfs(vector<vector<int> >& graph, int S,
          vector<int>& par, vector<int>& dist)
 {
