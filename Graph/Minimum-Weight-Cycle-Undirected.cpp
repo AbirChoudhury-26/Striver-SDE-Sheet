@@ -1,3 +1,23 @@
+/* Approach: Using Concept of Shortest Path Algorithm
+
+1). create an empty vector 'edge' of size 'E'
+   ( E total number of edge). Every element of 
+   this vector is used to store information of 
+   all the edge in graph info 
+
+2) Traverse every edge edge[i] one - by - one 
+    a). First remove 'edge[i]' from graph 'G'
+    b). get current edge vertices which we just 
+         removed from graph 
+    c). Find the shortest path between them 
+        "Using Dijkstra’s shortest path algorithm "
+    d). To make a cycle we add the weight of the 
+        removed edge to the shortest path.
+    e). update min_weight_cycle  if needed 
+3). return minimum weighted cycle
+
+*/
+
 #include<bits/stdc++.h> 
 using namespace std; 
 # define INF 0x3f3f3f3f 
