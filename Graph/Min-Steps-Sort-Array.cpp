@@ -82,6 +82,16 @@ int main()
 
 /* Greedy Approach */
 
+/* Steps:
+
+Create a new array and copy the elements of the input array
+Sort the new array and declare a variable ans equal to 0
+Run a for loop to traverse the elements
+If the current element in the sorted array is not equal to the one in the input array then increase the ans by 1
+And swap the current element, with the required element at this index
+Return ans 
+
+*/
 
 #include <bits/stdc++.h> 
 using namespace std; 
