@@ -154,6 +154,15 @@ int main()
 
 /* Hash Method */
 
+/* Steps:
+
+Make a map that stores the elements and their corresponding index, of the input array.
+So at each i starting from 0 to N in the given array, where N is the size of the array:
+If i is not in its correct position according to the sorted array, then
+We will fill this position with the correct element from the hashmap we built earlier. We know the correct element which should come here is temp[i], so we look up the index of this element from the hashmap. 
+After swapping the required elements, we update the content of the hashmap accordingly, as temp[i] to the ith position, and arr[i] to where temp[i] was earlier
+
+*/
 #include <bits/stdc++.h> 
 using namespace std; 
 
