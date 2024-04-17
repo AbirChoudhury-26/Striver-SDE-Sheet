@@ -1,10 +1,12 @@
 /* Steps:
+
 Create an array of pairs arrPos to store the input array elements along with their index
 Sort arrPos and run a loop for i [0, N]
 If the current element is already visited or it is at its correct position then continue
 Else calculate the cycle size from the current element using a while loop
 Declare an integer j equal to i and in the while loop set j equal to the index of arrPos[j] and increase cycle size while the element at jth position is not visited
 Increase the answer by the size of the current cycle – 1
+
 */
 
 #include <bits/stdc++.h> 
@@ -70,7 +72,6 @@ int minSwaps(int arr[], int n)
 	return ans; 
 } 
 
-// Driver code 
 int main() 
 { 
 	int arr[] = { 1, 5, 4, 3, 2 }; 
@@ -138,7 +139,6 @@ int minSwaps(vector<int> arr, int N)
 	return ans; 
 } 
 
-// Driver Code 
 int main() 
 { 
 
@@ -151,4 +151,4 @@ int main()
 	cout << minSwaps(a, n); 
 } 
 
-// This code is contributed by mohit kumar 29
+
