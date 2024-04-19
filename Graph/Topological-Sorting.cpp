@@ -1,3 +1,12 @@
+
+/*
+What is Topological Sorting:
+
+Topological sorting is a dependency problem in which completion of one task depends 
+upon the completion of several other tasks whose order can vary
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
