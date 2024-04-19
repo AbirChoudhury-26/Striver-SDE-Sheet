@@ -7,6 +7,21 @@ upon the completion of several other tasks whose order can vary
 
 */
 
+// Algorithm:
+
+/* 
+
+Create a graph with n vertices and m-directed edges.
+Initialize a stack and a visited array of size n.
+For each unvisited vertex in the graph, do the following:
+Call the DFS function with the vertex as the parameter.
+In the DFS function, mark the vertex as visited and recursively call the DFS function for all unvisited neighbors of the vertex.
+Once all the neighbors have been visited, push the vertex onto the stack.
+After all, vertices have been visited, pop elements from the stack and append them to the output list until the stack is empty.
+The resulting list is the topologically sorted order of the graph.
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
