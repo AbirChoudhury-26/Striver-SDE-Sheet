@@ -47,8 +47,7 @@ void DFS(vector< pair<int,int> > graph[], int src,
 // n is number of cities or nodes in graph
 // cable_lines is total cable_lines among the cities
 // or edges in graph
-int longestCable(vector<pair<int,int> > graph[],
-										int n)
+int longestCable(vector<pair<int,int> > graph[],int n)
 {
 	// maximum length of cable among the connected
 	// cities
