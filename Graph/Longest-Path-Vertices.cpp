@@ -1,3 +1,12 @@
+/* Method-1 : Using DFS
+
+We create undirected graph for given city map and do DFS from every city to find maximum length of cable. 
+While traversing, we look for total cable length to reach the current city and if it’s adjacent city is not visited then call DFS for it 
+But if all adjacent cities are visited for current node, then update the value of max_length if previous value of max_length is less than current value of total cable length. 
+
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
