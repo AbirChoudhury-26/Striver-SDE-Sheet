@@ -110,3 +110,19 @@ int main()
 
 	return 0;
 }
+
+// Method 2 (Efficient : Works only if Graph is Directed):
+
+/* 
+We can solve above problem in O(V+E) time if the given graph is directed instead of undirected graph. 
+Below are steps.
+
+Create a distance array dist[] and initialize all entries of it as minus infinite 
+Order all vertices in topological order. 
+Do following for every vertex u in topological order. 
+Do following for every adjacent vertex v of u 
+……if (dist[v] < dist[u] + weight(u, v)) 
+……..dist[v] = dist[u] + weight(u, v) 
+Return maximum value from dist[] 
+
+*/
