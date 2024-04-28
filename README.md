@@ -8,6 +8,4 @@
 * `Competetive platform like GFG,LeetCode Question are also included & added in Future`.
 * `Sub Sequences & Sub arrays` type of question are also added
 * `Stacks & Queue` are now being Added as Individual topics.
-* `Graphs` added in Easy-Medium Level
-
-### Note: Codes will be added for DSA Topics like Trees,Graphs etc from Striver Sheet'
+* `Graphs`& 'Trees' question are added in Easy-Medium Level.
