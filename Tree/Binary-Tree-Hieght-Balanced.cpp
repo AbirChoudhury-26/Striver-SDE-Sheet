@@ -1,4 +1,10 @@
+/* Approach:
 
+Get the height of left and right subtrees using dfs traversal. 
+Return true if the difference between heights is not more than 1.
+Also left and right subtrees are balanced, otherwise return false.
+
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
