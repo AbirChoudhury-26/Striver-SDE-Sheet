@@ -79,6 +79,16 @@
 
 // Method-2 : Using Recusrion Only
 
+// Working Principle : Calculating the height in the same recursion rather than calling a height() function separately.
+
+/* Steps:
+
+For each node make two recursion calls – one for left & other for the right subtree. 
+Based on the heights returned from the recursion calls, decide if the subtree whose root is the current node is height-balanced or not. 
+If it is balanced then return the height of that subtree. Otherwise, return -1 to denote that the subtree is not height-balanced.
+
+*/
+
 
 #include <bits/stdc++.h>
 using namespace std;
