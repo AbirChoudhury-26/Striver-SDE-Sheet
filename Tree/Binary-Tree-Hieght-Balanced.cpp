@@ -133,7 +133,7 @@ int main()
 	root->right->right = new Node(20);
 
 	if (isBalanced(root) > 0)
-		cout << "Balanced";
+		cout << "Its Balanced";
 	else
 		cout << "Not Balanced";
 	return 0;
