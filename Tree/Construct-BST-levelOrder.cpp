@@ -1,5 +1,13 @@
 // Approach 1 : Using Recurssion
 
+/* Steps:
+
+First, pick the first element of the array and make it root. 
+Pick the second element, if its value is smaller than the root node value make it left child, 
+Else make it right child 
+Now recursively call step (2) and step (3) to make a BST from its level Order Traversal.
+
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
