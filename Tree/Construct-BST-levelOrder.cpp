@@ -80,6 +80,28 @@ Now recursively call step (2) and step (3) to make a BST from its level Order Tr
 // Approach 2: Using Queue
 
 
+/* Step 2:
+
+Follow the below steps to Implement the above idea:
+
+Create an empty queue q<pair<Node*,pair<int,int>>> and push root and range from – infinite to  + infinite in q.
+Run for loop through the entire array containing the level order traversal
+Get the front of the queue and store its Node (in temp variable) and its range.
+If arr[i] can be a child of temp by checking the value is within the range. 
+Check whether arr[i] can be a left child or right child of the Node by checking the condition of BST.
+If arr[i] can be a left child, we create a new Node and point it to the left child of temp. 
+We update the range such that its new lower bound is the same as before and it’s new upper bound is the value of temp node.
+If arr[i] can be the right child, we create a new Node and point it to the right child of temp. 
+We update the range such that it’s new lower bound is the value of temp node and its new upper bound is the same as before. 
+Pop the temp node from the queue once the right child is set. This is because the temp node cannot have any more children.
+Else we pop out the node from the queue, decrement i and go ahead.
+Initialize temp_node = q.front() and print temp_node->data.
+Push temp_node’s children i.e. temp_node -> left then temp_node -> right to q
+Pop front node from q.
+Finally, return the head of the tree.
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
