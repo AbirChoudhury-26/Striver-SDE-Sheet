@@ -111,6 +111,16 @@ Travel up using the parent pointer until you see a node which is left child of i
 // }
 
 
+// Method-2 : Search from root
+
+/* Steps: 
+
+If right subtree of node is not NULL, then succ lies in right subtree. Do the following. 
+Go to right subtree and return the node with minimum key value in the right subtree.
+If right subtree of node is NULL, then start from the root and use search-like technique. Do the following. 
+Travel down the tree, if a node’s data is greater than root’s data then go right side, otherwise, go to left side.
+
+*/
 
 #include <iostream>
 using namespace std;
