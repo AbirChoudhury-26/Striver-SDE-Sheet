@@ -1,3 +1,13 @@
+// Method-1
+
+/* Steps:
+
+Traverse the tree, while traversing store the value of a node in the set
+If for a current node with value x, there exists a y for which x + y = sum then check it using set and return the pair.
+
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
