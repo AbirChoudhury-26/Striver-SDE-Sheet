@@ -86,7 +86,19 @@ If for a current node with value x, there exists a y for which x + y = sum then 
 // Method-2 : Using 2 Pointer Approach
 
 
+/* Approach :
 
+The main idea is to find the Inorder Traversal of the BST and store it in a vector. We know that Inorder traversal of BST will be in sorted order.Now we will Apply Two pointers Technique to find that whether there exist two elements in the vector that sums up to the given value.
+
+Algorithm:
+
+1. First find the Inorder traversal of the Given BST and store it in a vector  (Let v).
+2. Take two pointers i and j. Keep i at the start of v and j at the end of the v.  
+   i.   Now, if sum of elements at the ith index and jth index is greater that the given element then decrement j, 
+   ii.  If sum of elements at the ith index and jth index is less that the given element then increment i,
+   iii. Else, these two elements are our required answer. 
+
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
