@@ -74,7 +74,22 @@
 
 // Method-2 : Using Recursion
 
+/* Steps:
 
+Follow the below steps to implement the idea:
+
+Initialize pointers prev, first, middle, and last as Null pointers.
+Traverse the Binary search tree in in-order form 
+Make a recursive call for root -> left.
+If *prev != null and root -> data < (*prev)->data) then 
+If first = Null then set first = prev and middle = root.
+Else last = root.
+Make a recursive call for root -> right.
+Store the current node as prev.
+If last != Null swap last and first pointer.
+Else swap first and middle pointer
+
+*/
 // Two nodes in the BST's swapped, correct the BST.
 #include <bits/stdc++.h>
 using namespace std;
