@@ -1,6 +1,9 @@
 // Approach : Using Morris Traversal
 
+/* Advantages: The special thing about Morris traversal is that we can do Inorder traversal without using stack or recursion which saves us memory consumed by stack or recursion call stack.
+               Reverse Morris traversal is just the reverse of Morris traversal which is majorly used to do Reverse Inorder traversal with constant O(1) extra memory consumed as it does not uses any Stack or Recursion.*/
 
+               
 #include <bits/stdc++.h>
 using namespace std;
 
