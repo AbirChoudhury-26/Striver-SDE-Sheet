@@ -1,4 +1,9 @@
-// Optimized Approach
+// Optimized Approach:
+
+/* Idea:
+The idea is to traverse BST in reverse inorder. Reverse inorder traversal of a BST gives us keys in decreasing order. Before visiting a node, we visit all greater nodes of that node.
+While traversing we keep track of the sum of keys which is the sum of all the keys greater than the key of the current node. 
+*/
 #include<iostream>
 using namespace std;
 
