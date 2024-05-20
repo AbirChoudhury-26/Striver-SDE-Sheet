@@ -1,3 +1,18 @@
+/* Approach 1 (No recursion/ stack is used):
+
+Approach 1 
+
+The approach used is based on using an unordered set to keep track of visited nodes and a while loop to traverse the tree. 
+
+Initialize a pointer temp to the root node of the binary tree.
+Initialize an empty unordered set visited to keep track of visited nodes.
+While temp is not null and temp is not already visited (i.e., temp is not in visited set):
+a. If temp has a left child and the left child is not already visited, set temp to the left child.
+b. Else if temp has a right child and the right child is not already visited, set temp to the right child.
+c. Else, print the data of the current node temp, add temp to visited set, and set temp to the root node.
+Return from the function.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
