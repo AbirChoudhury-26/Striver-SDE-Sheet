@@ -64,6 +64,17 @@ If current is NULL and the stack is empty then we are done.
 // }
 
 
+// Approach 2: Using Morris Traversal
+
+/* Steps:
+
+Initialize the current node as root.
+While current is not null, check if it has a left child.
+If there is no left child, print the current node and move to the right child of the current node.
+Otherwise, find the rightmost node of the left subtree or the node whose right child is the current node:
+If the right child is NULL, make current as the right child and move to the left child of current.
+If the right child is the current node itself, print current node, make the right child NULL and move to the right child of the current node.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
